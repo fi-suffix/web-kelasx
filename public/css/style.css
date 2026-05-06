@@ -241,22 +241,173 @@ main {
 }
 
 /* Announcement Style */
+.pengumuman-page {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pengumuman-page .summary-header {
+    margin-bottom: 24px;
+}
+
+.pengumuman-page .summary-header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.pengumuman-page .summary-header p {
+    color: #475569;
+    line-height: 1.7;
+    max-width: 760px;
+    text-align: center;
+}
+
+.page-actions {
+    margin-bottom: 22px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #dc2626;
+}
+
+.pengumuman-list {
+    display: grid;
+    gap: 16px;
+}
+
 .announcement-item {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 15px;
-    border-left: 5px solid #ddd;
-    margin-bottom: 10px;
-    background: white;
-    border-radius: 8px;
+    gap: 20px;
+    padding: 22px;
+    border-left: 4px solid var(--primary-red);
+    margin-bottom: 0;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.06);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
-.date-badge {
-    font-size: 0.7rem;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: bold;
+.announcement-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.12);
+}
+
+.announcement-content {
+    min-width: 0;
+}
+
+.announcement-item h4 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+    color: #111827;
+}
+
+.announcement-item p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.7;
+    font-size: 0.96rem;
+    padding-right: 8px;
+}
+
+.announcement-meta {
+    display: block;
+    margin-top: 14px;
+    color: #64748b;
+    font-size: 0.88rem;
+}
+
+.announcement-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 160px;
+}
+
+.announcement-actions a,
+.announcement-actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.announcement-actions a {
+    color: var(--primary-red);
+    background: #fdf2f2;
+}
+
+.announcement-actions a:hover {
+    background: #fee2e2;
+}
+
+.announcement-actions button {
+    background: #ef4444;
+    color: #ffffff;
+    border-color: #ef4444;
+}
+
+.announcement-actions button:hover {
+    background: #dc2626;
+}
+
+.inline-form {
+    margin: 0;
+}
+
+.inline-form button {
+    border: none;
+}
+
+@media (max-width: 860px) {
+    .announcement-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .announcement-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .pengumuman-page {
+        padding: 22px 16px;
+    }
+
+    .announcement-actions {
+        width: 100%;
+    }
 }
 
 /* Search Form */
