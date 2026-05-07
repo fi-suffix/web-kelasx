@@ -28,16 +28,16 @@
             </div>
             <div class="crud">
                 <a href="{{ route('siswa.show', $wargakelas->id) }}">show</a>
-            @auth
-                <a href="{{ route('siswa.edit', $wargakelas->id) }}">edit</a>
-                <form action="{{ route('siswa.destroy', $wargakelas->id) }}" method="POST">
-                    @csrf
-                    {{-- pergantian method dari post menjadi delete --}}
-                    @method('DELETE')
-                    <button type="submit">Delete</button>
-                </form>
+                @auth
+                    <a href="{{ route('siswa.edit', $wargakelas->id) }}">edit</a>
+                    <form action="{{ route('siswa.destroy', $wargakelas->id) }}" method="POST">
+                        @csrf
+                        {{-- pergantian method dari post menjadi delete --}}
+                        @method('DELETE')
+                        <button type="submit">Delete</button>
+                    </form>
+                @endauth
             </div>
-            @endauth
         </div>
         @endforeach
     </div>

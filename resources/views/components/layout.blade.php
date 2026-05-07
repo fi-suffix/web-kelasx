@@ -90,4 +90,11 @@
     </main>
     </div>
 </body>
+<footer>
+  <p>&copy; 2025 GitsubTeams. All rights reserved.</p>
+  <div class="iframe">
+    <h2>Lokasi:</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.1074708402244!2d106.8647249243388!3d-6.467100609764616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1005501fd65%3A0x13e8a639e1e82f0d!2sMarkas%20Besar%20Rongawi%20Empire!5e0!3m2!1sid!2sid!4v1777869172763!5m2!1sid!2sid" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</footer>
 </html>
